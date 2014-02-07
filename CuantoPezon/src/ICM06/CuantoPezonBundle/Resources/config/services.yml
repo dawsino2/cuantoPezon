@@ -1,0 +1,7 @@
+parameters:
+#    icm06_cuanto_pezon.example.class: ICM06\CuantoPezonBundle\Example
+
+services:
+#    icm06_cuanto_pezon.example:
+#        class: %icm06_cuanto_pezon.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

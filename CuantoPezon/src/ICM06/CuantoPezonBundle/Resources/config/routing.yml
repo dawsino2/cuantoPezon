@@ -1,0 +1,19 @@
+icm06_cuanto_pezon_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: ICM06CuantoPezonBundle:Default:index }
+
+icm06_cuanto_pezon_listado:
+    pattern:  /listado
+    defaults: { _controller: ICM06CuantoPezonBundle:Default:listado }
+    
+icm06_cuanto_pezon_nuevo:
+    pattern:  /nuevo
+    defaults: { _controller: ICM06CuantoPezonBundle:Default:nuevo }
+    
+icm06_cuanto_pezon_borra:
+    pattern:  /borra/{id}
+    defaults: { _controller: ICM06CuantoPezonBundle:Default:borra }    
+
+icm06_cuanto_pezon_modifica:
+    pattern:  /modifica/{id}
+    defaults: { _controller: ICM06CuantoPezonBundle:Default:modifica }    

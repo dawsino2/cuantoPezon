@@ -1,0 +1,14 @@
+<h1>home de CuantoPezón.com</h1>
+<table border="1">
+    {% for noticia in noticias %}
+    <tr>
+        <td><img width="100" src="{{ asset('imagenes/' ~ noticia.imagen) }}"></td>
+        <td>{{ noticia.titulo  }}</td>
+        <td>{{ noticia.descripcion  }}</td>
+        <td><a href="borra/{{ noticia.idNoticia }}">Borrar</a></td>
+        <td><a href="modifica/{{ noticia.idNoticia }}">Modificar</a></td>
+    </tr>
+        {% endfor %}
+</table>
+<br>
+<a href="nuevo">Nueva Noticia</a>

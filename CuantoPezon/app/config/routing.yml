@@ -1,0 +1,4 @@
+icm06_cuanto_pezon:
+    resource: "@ICM06CuantoPezonBundle/Resources/config/routing.yml"
+    prefix:   /
+

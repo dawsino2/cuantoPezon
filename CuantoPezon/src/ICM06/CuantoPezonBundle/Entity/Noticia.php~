@@ -1,0 +1,60 @@
+<?php
+
+namespace ICM06\CuantoPezonBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Noticia
+ *
+ * @ORM\Table(name="noticia")
+ * @ORM\Entity
+ */
+class Noticia
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_noticia", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $idNoticia;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="titulo", type="string", length=200, nullable=false)
+     */
+    private $titulo;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="descripcion", type="string", length=500, nullable=false)
+     */
+    private $descripcion;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="fecha", type="datetime", nullable=false)
+     */
+    private $fecha = 'CURRENT_TIMESTAMP';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="like", type="integer", nullable=false)
+     */
+    private $like;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="imagen", type="string", length=200, nullable=false)
+     */
+    private $imagen;
+
+
+}
